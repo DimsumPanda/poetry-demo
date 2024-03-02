@@ -95,9 +95,19 @@ poetry publish -r testpypi --build
 # expect and error, update to a "valid email"
 # if you get an error about version name, update the version in pyproject.toml
 
-pip install -i https://test.pypi.org/simple/ ${PROJECT_NAME}
-
 ```
+
+## Test using Poetry shell
+```
+poetry shell
+poetry run python
+# replace PROJECT_NAME with the project (use underscores instead of hyphens)
+>>> from <PROJECT_NAME> import example
+>>> example.add_one(2)
+3
+```
+
+To exit out of poetry shell: `deactivate`
 
 ## Test it out in the Python console
 
@@ -107,6 +117,8 @@ package at the end of this demo.
 ```
 python3 -m venv venv
 . ./venv/bin/activate
+poetry install
+pip install -i https://test.pypi.org/simple/ ${PROJECT_NAME}
 ```
 ### Test the Package in the Console
 Navigate to some other folder, so you know you're not using the local package/module.
