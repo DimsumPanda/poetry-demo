@@ -22,6 +22,8 @@ poetry -v
 ```
 
 ## Set up Virtual Environment
+Poetry uses its own virtual environment, but this will be used when we test our 
+package at the end of this demo.
 ```
 python3 -m venv venv
 . ./venv/bin/activate
