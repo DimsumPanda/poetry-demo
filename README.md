@@ -21,14 +21,6 @@ asdf install
 poetry -v
 ```
 
-## Set up Virtual Environment
-Poetry uses its own virtual environment, but this will be used when we test our 
-package at the end of this demo.
-```
-python3 -m venv venv
-. ./venv/bin/activate
-```
-
 ## Project Set up
 Replace <test-pypi-username> with your test-pypi username, so there are no 
 package name conflicts when we upload.
@@ -108,6 +100,15 @@ pip install -i https://test.pypi.org/simple/ ${PROJECT_NAME}
 ```
 
 ## Test it out in the Python console
+
+### Set up Virtual Environment
+Poetry uses its own virtual environment, but this will be used when we test our 
+package at the end of this demo.
+```
+python3 -m venv venv
+. ./venv/bin/activate
+```
+### Test the Package in the Console
 Navigate to some other folder, so you know you're not using the local package/module.
 `python3`
 ```
