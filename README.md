@@ -117,7 +117,7 @@ package at the end of this demo.
 ```
 python3 -m venv venv
 . ./venv/bin/activate
-poetry install
+pip install pytest
 pip install -i https://test.pypi.org/simple/ ${PROJECT_NAME}
 ```
 ### Test the Package in the Console
