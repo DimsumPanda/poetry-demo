@@ -3,8 +3,8 @@ These steps are following the official documentation for python-poetry.
 https://python-poetry.org/docs/
 
 ## Prerequisites
-1. Test PyPi account
-2. Test Pypi token (set your Pypi token now: `export PYPI_TOKEN=pypi-xxxx`)
+1. Test PyPI account
+2. Test PyPI token (set your Pypi token now: `export PYPI_TOKEN=pypi-xxxx`)
 3. Python 3.8+ installed
 4. Poetry installed
 
@@ -85,7 +85,7 @@ poetry run python ${PROJECT_NAME//-/_}/example.py
 poetry run pytest
 poetry build
 ```
-## Set up Test Pypi Repo
+## Set up Test PypI Repo
 ```
 #if you didn't already, set PYPI_TOKEN=pypi-xxxxxxx with your token
 poetry config repositories.testpypi https://test.pypi.org/legacy/
