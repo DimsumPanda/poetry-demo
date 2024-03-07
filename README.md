@@ -118,7 +118,7 @@ package at the end of this demo.
 python3 -m venv venv
 . ./venv/bin/activate
 pip install pytest
-pip install -i https://test.pypi.org/simple/ ${PROJECT_NAME}
+pip install --no-cache-dir -i https://test.pypi.org/simple/ ${PROJECT_NAME}
 ```
 ### Test the Package in the Console
 Navigate to some other folder, so you know you're not using the local package/module.
